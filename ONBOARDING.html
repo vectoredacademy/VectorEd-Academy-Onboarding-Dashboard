@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VectorEd Academy - Student Onboarding Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        veblue: '#0B192C',
+                        veblueLight: '#1E3E62',
+                        veorange: '#FF6500',
+                        veorangeLight: '#FFE5D0',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col font-sans">
+
+    <!-- Header / Navbar -->
+    <header class="bg-[#0B192C] border-b border-slate-800 shadow-lg px-6 py-4 flex items-center justify-between sticky top-0 z-30">
+        <div class="flex items-center space-x-3">
+            <img src="https://iili.io/ndL8PQj.png" alt="VectorEd Academy Logo" class="w-12 h-12 object-cover rounded-xl border-2 border-amber-500 shadow-md">
+            <div>
+                <h1 class="text-2xl font-black tracking-wider text-white flex items-center gap-2">
+                    Vector<span class="text-amber-500">Ed</span> <span class="text-slate-300 font-normal text-lg">Academy</span>
+                </h1>
+                <p class="text-xs text-slate-400 tracking-wide font-medium">Student Onboarding & Resource Portal</p>
+            </div>
+        </div>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+            <a href="#welcome" class="hover:text-amber-400 transition">Welcome</a>
+            <a href="#video-segment" class="hover:text-amber-400 transition">CEO Message</a>
+            <a href="#resources" class="hover:text-amber-400 transition">Important Files</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-1 max-w-6xl w-full mx-auto px-4 py-8 space-y-16">
+        
+        <!-- 1. Welcome Banner Section -->
+        <section id="welcome" class="relative overflow-hidden bg-gradient-to-r from-slate-800 to-[#1E3E62] border border-slate-700/80 rounded-3xl p-8 md:p-12 shadow-2xl text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="space-y-4 max-w-xl">
+                <span class="bg-amber-500/10 text-amber-400 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full border border-amber-500/20 inline-block">
+                    Official Enrollment Portal
+                </span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
+                    Welcome to <span class="text-amber-500">VectorEd</span> Academy!
+                </h2>
+                <p class="text-sm md:text-base leading-relaxed font-bold" style="color: #FFDF00;">
+                    We'll help you find your pace<br>
+		    And soon you'll conquer any test
+                </p>
+                <div class="pt-2 flex flex-wrap gap-4 justify-center md:justify-start">
+                    <a href="#video-segment" class="bg-amber-600 hover:bg-amber-500 text-white font-bold px-6 py-3 rounded-xl transition shadow-lg shadow-amber-900/30 text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-play"></i> Watch CEO Welcome
+                    </a>
+                    <a href="#resources" class="bg-slate-700 hover:bg-slate-600 text-slate-200 font-semibold px-6 py-3 rounded-xl transition text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-folder-open"></i> Access Resources
+                    </a>
+                </div>
+            </div>
+            <div class="w-64 h-64 md:w-80 md:h-80 flex-shrink-0 bg-amber-500/10 rounded-full border-4 border-amber-500/20 flex items-center justify-center shadow-inner relative">
+                <img src="https://i.postimg.cc/xdNbKZ36/BANNER.jpg" alt="VectorEd Emblem" class="w-52 h-52 object-cover rounded-2xl shadow-lg border border-amber-500/40">
+            </div>
+        </section>
+
+        <!-- 2. Heroes Welcome Video Segment -->
+        <section id="video-segment" class="bg-slate-800/80 border border-slate-700 rounded-3xl p-6 md:p-8 shadow-xl">
+            <div class="text-center max-w-2xl mx-auto mb-8 space-y-2">
+                <h3 class="text-2xl font-bold text-white flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-video text-amber-500"></i> A Personal Welcome from Our CEO
+                </h3>
+                <p class="text-xs md:text-sm text-slate-400">
+                    Watch this orientation message to understand our core mission, academic expectations, and how we support your success.
+                </p>
+            </div>
+            <div class="relative w-full aspect-video bg-slate-900 rounded-2xl overflow-hidden border border-slate-700 shadow-2xl flex items-center justify-center">
+                <!-- Replace the src with your actual video link (YouTube embed or direct video file) -->
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" title="CEO Welcome Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- 3. Important Files & Resources Section -->
+        <section id="resources" class="space-y-6">
+            <div class="border-b border-slate-800 pb-4">
+                <h3 class="text-2xl font-bold text-white flex items-center gap-2">
+                    <i class="fa-solid fa-folder-tree text-amber-500"></i> Essential Onboarding Files & Hubs
+                </h3>
+                <p class="text-xs text-slate-400 mt-1">Review your guidelines, track your performance metrics, and check available live schedules below.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Resource 1: Policy and Guidelines -->
+                <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 shadow-lg flex flex-col justify-between hover:border-amber-500/50 transition group">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 bg-amber-500/10 text-amber-500 rounded-xl flex items-center justify-center text-xl border border-amber-500/20 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-file-shield"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white">1. Policy & Guidelines</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Read through our student code of conduct, attendance protocols, rescheduling rules, and center policies.
+                        </p>
+                    </div>
+                    <div class="pt-6">
+                        <a href="https://drive.google.com/file/d/1cpqYh7vNpDrplxVlcWIRXH6Bczzq4zmj/view?usp=sharing" target="_blank" class="w-full bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-bold py-2.5 px-4 rounded-xl transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-download"></i> View / Download PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Resource 2: VectorEd SKILLS -->
+                <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 shadow-lg flex flex-col justify-between hover:border-amber-500/50 transition group">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 bg-amber-500/10 text-amber-500 rounded-xl flex items-center justify-center text-xl border border-amber-500/20 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white">2. VectorEd SKILLS</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Access student performance matrices, competency milestone trackers, and developmental progress reports.
+                        </p>
+                    </div>
+                    <div class="pt-6">
+                        <a href="https://drive.google.com/file/d/16z1cGZbVwwPQjrK8Mucto5Iy5-Bq1j7D/view?usp=sharing" target="_blank" class="w-full bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-bold py-2.5 px-4 rounded-xl transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Skills Tracker
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Resource 3: Interactive Calendar Link -->
+                <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 shadow-lg flex flex-col justify-between hover:border-amber-500/50 transition group">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 bg-amber-500/10 text-amber-500 rounded-xl flex items-center justify-center text-xl border border-amber-500/20 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white">3. Interactive Calendar</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Check real-time class slots, review booked schedules, and identify available hours synced via our live system.
+                        </p>
+                    </div>
+                    <div class="pt-6">
+                        <!-- Link to your Netlify calendar app deployed earlier -->
+                        <a href="https://vectored-academy-calendar.netlify.app" target="_blank" class="w-full bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold py-2.5 px-4 rounded-xl transition shadow-lg shadow-amber-900/30 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-calendar-check"></i> Open Live Calendar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Resource 4: Student File Upload Directory -->
+                <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 shadow-lg flex flex-col justify-between hover:border-amber-500/50 transition group">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 bg-amber-500/10 text-amber-500 rounded-xl flex items-center justify-center text-xl border border-amber-500/20 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white">4. Student Upload Hub</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Access the official Google Drive directory to upload your required class files and assignment documents into your designated student folder.
+                        </p>
+                    </div>
+                    <div class="pt-6">
+                        <a href="https://drive.google.com/drive/folders/1iFIz2tUq-LAYv1Q1wwngTny1obUeyzzR?usp=sharing" target="_blank" class="w-full bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold py-2.5 px-4 rounded-xl transition shadow-lg shadow-amber-900/30 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-folder-open"></i> Open Drive Directory
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Resource 5: Real-Time Package Tracker (Next Row) -->
+                <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 shadow-lg flex flex-col justify-between hover:border-amber-500/50 transition group">
+                    <div class="space-y-3">
+                        <div class="w-12 h-12 bg-amber-500/10 text-amber-500 rounded-xl flex items-center justify-center text-xl border border-amber-500/20 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white">5. Package Tracker</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Monitor remaining student package hours and real-time progress portfolios via our live tracking dashboard.
+                        </p>
+                    </div>
+                    <div class="pt-6">
+                        <a href="https://vectored-academy-package-tracker.netlify.app" target="_blank" class="w-full bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold py-2.5 px-4 rounded-xl transition shadow-lg shadow-amber-900/30 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Package Tracker
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-500 text-xs py-6 px-6 text-center border-t border-slate-800 mt-16 space-y-2">
+        <p>&copy; 2026 VectorEd Academy. All rights reserved. Student Onboarding & Resource Hub.</p>
+        <p class="text-slate-600">Need technical help? Contact support through your center coordinator.</p>
+    </footer>
+
+</body>
+</html>
